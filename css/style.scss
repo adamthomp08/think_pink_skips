@@ -1,0 +1,333 @@
+$pink: #e62382;
+$light_pink: #f393b2;
+$yellow: #f4c100; 
+$light_yellow: #f2f2f2;
+$light_blue: #049fde; 
+$black: #333333;
+$text_black: #4d4d4d;
+$light_grey: #f2f2f2; 
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container{
+	display: block; 
+	width: 1040px; 
+	margin: 0 auto; 
+	padding: 0px 20px; 
+}
+
+.container:before,
+.container:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.container:after {
+   clear:both; 
+}
+
+img{
+	max-width: 100%;
+}
+
+p{
+	margin: 0 0 20px;
+}
+
+
+@mixin one-cols{
+	.col{
+		float: left;
+		width: 100%;
+		max-width: 1000px;
+		
+	}
+}
+
+
+@mixin two-cols{
+	.col{
+		float: left;
+		width: 100%;
+		max-width: 490px;
+		margin-right: 20px;
+	}
+	.last.col{
+		margin-right: 0px;
+	}
+}
+
+
+@mixin three-cols{
+	.col{
+		float: left;
+		width: 100%;
+		max-width: 320px;
+		margin-right: 20px;
+	}
+	.last.col{
+		margin-right: 0px;
+	}
+}
+
+@mixin four-cols{
+	.col{
+		float: left;
+		width: 100%;
+		max-width: 235px;
+		margin-right: 20px;
+	}
+	.last.col{
+		margin-right: 0px;
+	}
+}
+
+.main-nav{
+
+	padding: 20px 0px; 
+
+	.logo{
+		float: left; 
+		width: 290px;
+	}
+
+	.logo img{
+		max-width: 290px; 
+	}
+	nav{
+		float: left; 
+		width: 690px;
+		margin-left: 20px; 
+	}
+	nav ul{
+		margin: 0;
+		padding: 0; 
+		list-style: none;
+		text-align: right;
+	}
+	nav ul li{
+		display: inline-block;
+    	padding: 12px 15px;
+	}
+	nav ul li a{
+		text-decoration: none;
+		font-size: 0.85em;
+		color: $pink; 
+		font-weight: 600;
+	}
+	nav ul li:last-child {
+    	padding-right: 0;
+	}
+}
+
+.home-intro{
+	@include two-cols;
+
+	padding: 40px 0px; 
+}
+
+.icon-blocks-3{
+
+	@include three-cols;
+	position: relative;
+	margin-top: -50px;
+	z-index: 1;
+	padding-bottom: 40px;
+
+	.col{
+		max-width: 332px; 
+		margin: 0;
+		padding: 20px;
+		color: #fff; 
+		text-align: center;
+	}
+	h2{
+		margin: 0 0 20px; 
+		line-height: 1;
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+	img{
+		display: block; 
+		margin: 0 auto 20px;
+	}
+	a{
+		display: block;
+		width: 120px;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 600;
+		text-decoration: none;
+		border: 1px solid #fff;
+		margin: 0 auto; 
+		padding: 10px;
+		line-height: 1;
+
+	}
+	.pink{
+		background-color: $pink; 
+	}
+	.light-pink{
+		background-color: $light_pink;
+	}
+	.yellow{
+		background-color: $yellow; 
+	}
+}
+
+.icon-blocks-4{
+	@include four-cols;
+
+	background-color: $pink;
+	padding: 30px 0px 40px; 
+	text-align: center;
+	line-height: 1;
+
+	.col{
+		color: #fff;
+		padding: 20px;
+		border: 2px solid $light_pink;
+	}
+	img{
+		margin-bottom: 20px;
+	}
+	h3{
+		color: #fff;
+		font-weight: 900;
+		font-size: 28px; 
+		margin: 0 0 25px; 
+		text-transform: uppercase;
+	}
+	h3:after{
+		display: block;
+    	content: ' ';
+    	background-color: #f4c100;
+   		width: 70px;
+   		height: 2px;
+    	margin: 20px auto 0;
+	}
+	h4{
+		margin: 0 0 5px;
+	}
+	p{
+		font-weight: 600; 
+		margin: 0;
+		line-height: 1.4;
+	}
+}
+
+.contact-details{
+	@include two-cols;
+
+	padding: 40px 0px; 
+	background-color: $light_grey;
+
+	h5{
+		color: $pink;
+		font-weight: 900;
+		font-size: 28px; 
+		margin: 0 0 40px; 
+		text-transform: uppercase;
+		text-align: center;
+	}
+	h5:after{
+		display: block;
+    	content: ' ';
+    	background-color: #f4c100;
+   		width: 70px;
+   		height: 2px;
+    	margin: 20px auto 0;
+	}
+	p{
+		font-size: 0.9em;
+		color: $text_black;
+	}
+	p span{
+		display: block;
+		font-weight: 900;
+	}
+	a{
+		text-decoration: none; 
+		color: $text_black;
+	}
+	.form-field input[type=text]{
+		height: 40px;
+		width: 100%;
+		border: none; 
+		margin-bottom: 20px;
+		background-color: #fff;
+		padding: 10px;
+	}
+	.form-field input[type=submit]{
+		width: 122px;
+	    margin-left: auto;
+	    display: block;
+	    background-color: $pink;
+	    border: 0;
+	    padding: 10px;
+	    color: #fff;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	}
+	.form-field textarea{
+		width: 100%;
+		border: none; 
+		background-color: #fff;
+		padding: 10px;
+	}
+	.form-field input[type=text],
+	.form-field textarea{
+		color: $text_black;
+		margin-bottom: 20px;
+	}
+}
+
+.footer{
+	@include three-cols;
+
+	background-color: $black;
+	color: #fff;
+	padding: 20px 0px; 
+	font-size: 0.8em;
+
+	p{
+		margin: 0;
+	}
+
+	.blue{
+		color: $light_blue;
+	}
+
+	span{
+		display: inline-block;
+	}
+
+	a{
+		color: $light_blue;
+		text-decoration: none; 
+	}
+	.last.col {
+		text-align: right;
+	}
+
+	.last.col span{
+		display: block; 
+		text-align: right; 
+	}
+
+	.bottom-text{
+		display: block;
+    	padding-top: 50px;
+    	text-align: center;
+	}
+
+} 
+
+
+
+
+
+
