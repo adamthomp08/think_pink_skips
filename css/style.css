@@ -20,8 +20,20 @@
 img {
   max-width: 100%; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px;
+  line-height: 1; }
+
 p {
   margin: 0 0 20px; }
+
+a {
+  font-weight: 900;
+  text-decoration: none;
+  color: #e62382; }
+
+a:hover {
+  text-decoration: underline; }
 
 .main-nav {
   padding: 10px 0px; }
@@ -47,9 +59,266 @@ p {
     text-decoration: none;
     font-size: 0.85em;
     color: #e62382;
-    font-weight: 600; }
+    font-weight: 600;
+    position: relative; }
+  .main-nav nav ul li a:hover:after {
+    width: 100%;
+    background-color: #f4c100; }
+  .main-nav nav ul li a:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+    -webkit-transition: width .3s ease, background-color .3s ease;
+    -moz-transition: width .3s ease, background-color .3s ease;
+    -o-transition: width .3s ease, background-color .3s ease; }
+  .main-nav a.active:after {
+    width: 100% !important;
+    background-color: #f4c100 !important; }
   .main-nav nav ul li:last-child {
     padding-right: 0; }
+
+.homepage-banner {
+  position: relative; }
+  .homepage-banner .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .homepage-banner .into-msg {
+    position: absolute;
+    left: 0;
+    top: 54px; }
+  .homepage-banner .into-msg {
+    max-width: 366px;
+    height: auto; }
+
+.white-text-area {
+  padding: 40px 0px; }
+  .white-text-area .col {
+    float: left;
+    width: 100%;
+    max-width: 1000px; }
+  .white-text-area h1 {
+    position: relative;
+    color: #e62382;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 30px; }
+  .white-text-area h1:after {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #f4c100;
+    bottom: -16px;
+    left: 0px; }
+  .white-text-area h2 {
+    color: #e62382;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px; }
+  .white-text-area h2 span {
+    color: #4d4d4d; }
+  .white-text-area ol {
+    margin: 0;
+    padding-left: 20px; }
+  .white-text-area ol li {
+    color: #e62382;
+    font-weight: 900; }
+  .white-text-area ol li span {
+    color: #4d4d4d;
+    font-weight: 200; }
+  .white-text-area .btn-container {
+    padding: 20px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900; }
+  .white-text-area .private-land {
+    float: left;
+    color: #e62382;
+    border: 2px solid #e62382;
+    width: 48%;
+    margin-right: 2%;
+    padding: 15px; }
+  .white-text-area .private-road {
+    float: left;
+    color: #e62382;
+    border: 2px solid #e62382;
+    width: 48%;
+    margin-left: 2%;
+    padding: 15px; }
+  .white-text-area .active.private-road,
+  .white-text-area .active.private-land {
+    color: #fff;
+    background-color: #e62382; }
+  .white-text-area .col {
+    position: relative; }
+  .white-text-area .address-form {
+    float: left;
+    width: 60%;
+    margin-right: 2%; }
+  .white-text-area .price {
+    position: absolute;
+    width: 38%;
+    margin-left: 62%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .white-text-area .address-form span {
+    display: inline-block;
+    font-size: 18px;
+    color: #e62382;
+    font-weight: 900;
+    margin-bottom: 10px; }
+  .white-text-area .address-lines {
+    margin-bottom: 20px; }
+  .white-text-area .address-lines input,
+  .white-text-area .postcode input {
+    width: 100%;
+    border: 1px solid #f2f2f2;
+    height: 40px;
+    padding: 5px 10px; }
+  .white-text-area .cost {
+    position: absolute;
+    color: #e62382;
+    font-weight: 900;
+    font-size: 22px;
+    bottom: 50px;
+    font-size: 70px;
+    width: 100%;
+    text-align: center; }
+  .white-text-area .price input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #e62382;
+    color: #fff;
+    border: 0; }
+
+.pink-text-area {
+  padding: 40px 0px;
+  background-color: #e62382;
+  color: #fff; }
+  .pink-text-area .col {
+    float: left;
+    width: 100%;
+    max-width: 490px;
+    margin-right: 20px; }
+  .pink-text-area .last.col {
+    margin-right: 0px; }
+  .pink-text-area ul li {
+    margin: 0 0 20px; }
+
+.pink-text-area-form {
+  padding: 40px 0px;
+  background-color: #e62382;
+  color: #fff; }
+  .pink-text-area-form .col {
+    float: left;
+    width: 100%;
+    max-width: 1000px; }
+  .pink-text-area-form .date-picker-container {
+    float: left;
+    width: 60%;
+    margin-right: 2%;
+    background: red; }
+  .pink-text-area-form .hire-days {
+    position: absolute;
+    width: 38%;
+    margin-left: 62%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .pink-text-area-form h2 {
+    color: #f4c100;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px; }
+  .pink-text-area-form h2 span {
+    color: #fff; }
+  .pink-text-area-form .col {
+    position: relative; }
+  .pink-text-area-form .three-day,
+  .pink-text-area-form .twenty-one-day {
+    position: absolute;
+    width: 100%;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+    bottom: 0;
+    cursor: pointer; }
+  .pink-text-area-form .active.three-day,
+  .pink-text-area-form .active.twenty-one-day {
+    background-color: #fff;
+    color: #e62382; }
+  .pink-text-area-form .three-day {
+    bottom: 70px; }
+  .pink-text-area-form .ui-datepicker {
+    width: 100%;
+    padding: 0; }
+  .pink-text-area-form .ui-datepicker td a {
+    text-align: center; }
+  .pink-text-area-form .ui-datepicker-calendar {
+    background-color: #e62382; }
+  .pink-text-area-form .ui-state-default, .pink-text-area-form .ui-widget-content .ui-state-default {
+    background-color: #f393b2;
+    color: #fff;
+    border: 1px solid #f393b2; }
+  .pink-text-area-form .ui-widget.ui-widget-content {
+    border: none; }
+  .pink-text-area-form .ui-datepicker table {
+    margin: 0; }
+  .pink-text-area-form .ui-datepicker td {
+    padding: 0; }
+  .pink-text-area-form .ui-datepicker td a {
+    padding: 8px;
+    font-size: 12px; }
+  .pink-text-area-form .ui-datepicker-calendar thead {
+    border-bottom: 1px solid #f4c100;
+    color: #fff;
+    font-size: 12px; }
+  .pink-text-area-form .ui-widget-header {
+    background-color: #e62382;
+    color: #fff;
+    border: 1px solid #e62382;
+    text-transform: uppercase; }
+  .pink-text-area-form .ui-datepicker .ui-datepicker-title {
+    font-size: 12px; }
+  .pink-text-area-form .ui-state-active, .pink-text-area-form .ui-widget-content .ui-state-active {
+    background-color: #f4c100 !important;
+    border-color: #f4c100 !important;
+    color: #fff; }
+  .pink-text-area-form .ui-icon-circle-triangle-e {
+    background-image: url("/img/right_arrow.png");
+    background-position: 50% 50%; }
+  .pink-text-area-form .ui-icon-circle-triangle-w {
+    background-image: url("/img/left_arrow.png");
+    background-position: 50% 50%; }
+  .pink-text-area-form .ui-corner-all {
+    border-radius: 0px; }
+  .pink-text-area-form .ui-datepicker-next-hover,
+  .pink-text-area-form .ui-datepicker-prev-hover {
+    background-color: #f4c100;
+    border: 0; }
+  .pink-text-area-form .ui-datepicker-week-end .ui-state-default {
+    background-color: #f169a4;
+    border: 1px solid #f169a4; }
 
 .home-intro {
   padding: 40px 0px; }
@@ -63,7 +332,7 @@ p {
 
 .icon-blocks-3 {
   position: relative;
-  margin-top: -50px;
+  margin-top: -30px;
   z-index: 1;
   padding-bottom: 40px; }
   .icon-blocks-3 .col {
@@ -83,7 +352,11 @@ p {
     margin: 0 0 20px;
     line-height: 1;
     text-transform: uppercase;
-    font-weight: 900; }
+    font-weight: 900;
+    font-size: 22px; }
+  .icon-blocks-3 i {
+    font-size: 130px;
+    line-height: 0.2; }
   .icon-blocks-3 img {
     display: block;
     margin: 0 auto 20px; }
@@ -138,6 +411,8 @@ p {
     margin: 20px auto 0; }
   .icon-blocks-4 h4 {
     margin: 0 0 5px; }
+  .icon-blocks-4 i {
+    font-size: 60px; }
   .icon-blocks-4 p {
     font-weight: 600;
     margin: 0;
@@ -145,7 +420,8 @@ p {
 
 .contact-details {
   padding: 40px 0px;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  margin-bottom: 30px; }
   .contact-details .col {
     float: left;
     width: 100%;
@@ -153,6 +429,15 @@ p {
     margin-right: 20px; }
   .contact-details .last.col {
     margin-right: 0px; }
+  .contact-details .icon-details .sub-col {
+    display: block;
+    float: left;
+    width: 15%; }
+  .contact-details .icon-details .last.sub-col {
+    width: 85%; }
+  .contact-details .icon-details i {
+    font-size: 30px;
+    color: #e62382; }
   .contact-details h5 {
     color: #e62382;
     font-weight: 900;
@@ -203,6 +488,46 @@ p {
     color: #4d4d4d;
     margin-bottom: 20px; }
 
+.skips-selection {
+  padding: 40px 0;
+  background-color: #f2f2f2; }
+  .skips-selection .col {
+    float: left;
+    width: 100%;
+    max-width: 235px;
+    margin-right: 20px; }
+  .skips-selection .last.col {
+    margin-right: 0px; }
+  .skips-selection h2 {
+    color: #e62382;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px; }
+  .skips-selection h2 span {
+    color: #4d4d4d; }
+  .skips-selection .skip-title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase; }
+  .skips-selection .skip-size {
+    display: inline-block;
+    width: 100%;
+    font-weight: 200;
+    margin-bottom: 40px; }
+  .skips-selection .skip-btn {
+    padding: 10px;
+    color: #e62382; }
+  .skips-selection .skip-btn:hover {
+    cursor: pointer;
+    background-color: #e62382;
+    color: #fff; }
+  .skips-selection .active.skip-btn {
+    background-color: #e62382;
+    color: #fff; }
+  .skips-selection .last img {
+    margin-top: -10px; }
+
 .footer {
   background-color: #333333;
   color: #fff;
@@ -215,6 +540,17 @@ p {
     margin-right: 20px; }
   .footer .last.col {
     margin-right: 0px; }
+  .footer i {
+    color: #069ede;
+    font-size: 20px; }
+  .footer .sub-col {
+    display: block;
+    float: left;
+    width: 6%;
+    margin-right: 2%; }
+  .footer .last.sub-col {
+    width: 92%;
+    margin-right: 0; }
   .footer p {
     margin: 0; }
   .footer .blue {
