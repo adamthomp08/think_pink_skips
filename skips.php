@@ -63,8 +63,8 @@
                 <div class="col last">
                         <h2>Step 2: <span>Configure</span></h2>
                         <div class="btn-container clearfix">
-                                <div class="private-land ">Private Land</div>
-                                <div class="private-road active">Private Road*</div>
+                                <div class="private-land configure">Private Land</div>
+                                <div class="private-road configure active">Private Road*</div>
                         </div>
                         <p>*If your Skip is to be placed on the road, then we will need to apply for a permit. The charge for a permit is £33.00 + vat and
 this will be added to your quote Craven District,council impose additional costs . Please call the office on <a href="tel:01524844151">01524 844 151</a>
@@ -81,8 +81,8 @@ for a quote for this area if you require your skip to be placed on the road.</p>
                                 <div class="date-picker"></div>
                         </div>
                         <div class="hire-days">
-                                <div class="three-day active">3 Days</div>
-                                <div class="twenty-one-day">21 Days</div>
+                                <div class="three-day delivery active">3 Days</div>
+                                <div class="twenty-one-day delivery">21 Days</div>
                         </div>
                 </div>
         </div>

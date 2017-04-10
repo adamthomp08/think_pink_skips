@@ -29,12 +29,12 @@
                         </div>
                         <nav>
                             <ul>
-                                <li><a href="/index.php" class="active">Home</a></li>
+                                <li><a href="/" class="home">Home</a></li>
                                 <li><a href="/about-us.php">About Us</a></li>
                                 <li><a href="/skips.php">Skip Hire</a></li>
                                 <li><a href="/grab-hire.php">Grab Hire</a></li>
-                                <li><a href="#">Sweeper Hire</a></li>
-                                <li class="last"><a href="#">Contact</a></li>
+                                <li><a href="/sweeper.php">Sweeper Hire</a></li>
+                                <li class="last"><a href="/contact-page.php">Contact</a></li>
                             </ul>
                         </nav>
                 </div>

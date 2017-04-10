@@ -1,0 +1,82 @@
+
+.contact-details{
+	@include two-cols;
+
+	padding: 40px 0px; 
+	background-color: $light_grey;
+	margin-bottom: 30px;
+
+	.icon-details .sub-col {
+	    display: block;
+	    float: left;
+	    width: 15%;
+	}
+
+	.icon-details .last.sub-col {
+	    width: 85%;
+	}
+
+	.icon-details i {
+	    font-size: 30px;
+	    color: $pink;
+	}
+
+	h5{
+		color: $pink;
+		font-weight: 900;
+		font-size: 28px; 
+		margin: 0 0 40px; 
+		text-transform: uppercase;
+		text-align: center;
+	}
+	h5:after{
+		display: block;
+    	content: ' ';
+    	background-color: #f4c100;
+   		width: 70px;
+   		height: 2px;
+    	margin: 20px auto 0;
+	}
+	p{
+		font-size: 0.9em;
+		color: $text_black;
+	}
+	p span{
+		display: block;
+		font-weight: 900;
+	}
+	a{
+		text-decoration: none; 
+		color: $text_black;
+	}
+	.form-field input[type=text]{
+		height: 40px;
+		width: 100%;
+		border: none; 
+		margin-bottom: 20px;
+		background-color: #fff;
+		padding: 10px;
+	}
+	.form-field input[type=submit]{
+		width: 122px;
+	    margin-left: auto;
+	    display: block;
+	    background-color: $pink;
+	    border: 0;
+	    padding: 10px;
+	    color: #fff;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	}
+	.form-field textarea{
+		width: 100%;
+		border: none; 
+		background-color: #fff;
+		padding: 10px;
+	}
+	.form-field input[type=text],
+	.form-field textarea{
+		color: $text_black;
+		margin-bottom: 20px;
+	}
+}

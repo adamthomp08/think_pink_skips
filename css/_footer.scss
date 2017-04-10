@@ -1,0 +1,59 @@
+
+.footer{
+	@include three-cols;
+
+	background-color: $black;
+	color: #fff;
+	padding: 20px 0px; 
+	font-size: 0.8em;
+
+	i {
+	    color: #069ede;
+	    font-size: 20px;
+	}
+
+	.sub-col {
+	    display: block;
+	    float: left;
+	    width: 6%;
+	    margin-right: 2%;
+	}
+
+	.last.sub-col {
+	    width: 92%;
+	    margin-right: 0;
+	}
+
+	p{
+		margin: 0;
+	}
+
+	.blue{
+		color: $light_blue;
+	}
+
+	span{
+		display: inline-block;
+	}
+
+	a{
+		color: $light_blue;
+		text-decoration: none; 
+	}
+	.last.col {
+		text-align: right;
+	}
+
+	.last.col span{
+		display: block; 
+		text-align: right; 
+	}
+
+	.bottom-text{
+		display: block;
+    	padding-top: 50px;
+    	text-align: center;
+	}
+
+} 
+

@@ -1,0 +1,157 @@
+.home-intro{
+	@include two-cols;
+
+	padding: 40px 0px; 
+}
+
+.white-text-area{
+	@include one-cols;
+
+	padding: 40px 0px; 
+
+	h1{
+		position: relative;
+	    color: #e62382;
+	    text-transform: uppercase;
+	    font-weight: 900;
+	    font-size: 28px;
+	    margin-bottom: 30px; 
+	}
+
+	h1:after{
+		position: absolute;
+	    content: ' ';
+	    display: block;
+	    width: 70px;
+	    height: 4px;
+	    background-color: #f4c100;
+	    bottom: -16px;
+	    left: 0px;
+	}
+
+	h2{
+		color: $pink; 
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 22px;
+	}
+
+	h2 span{
+		color: $text_black;
+	}
+
+	ol{
+	    margin: 0;
+	    padding-left: 20px;
+	}
+	ol li{
+		color: $pink; 
+		font-weight: 900;
+	}
+	ol li span{
+		color: $text_black;
+		font-weight: 200;
+	}
+	.btn-container{
+		padding: 20px 0px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+	.private-land{
+		float: left;
+		color: $pink; 
+		border: 2px solid $pink; 
+		width: 48%;
+		margin-right: 2%;
+		padding: 15px;
+	}
+	.private-road{
+		float: left;
+		color: $pink; 
+		border: 2px solid $pink; 
+		width: 48%;
+		margin-left: 2%;
+		padding: 15px;
+	}
+	.active.private-road,
+	.active.private-land{
+		color: #fff; 
+		background-color: $pink;
+	}
+
+	.col{
+		position: relative;
+	}
+
+	.address-form{
+		float: left; 
+		width: 60%;
+		margin-right: 2%;
+	}
+
+	.price{
+		position: absolute;
+		width: 38%; 
+		margin-left: 62%; 
+		top: 0;
+		left: 0; 
+		right: 0; 
+		bottom: 0; 
+	}
+
+	.address-form span{
+		display: inline-block;
+		font-size: 18px;
+		color: $pink; 
+		font-weight: 900;
+		margin-bottom: 10px; 
+	}
+
+	.address-lines{
+		margin-bottom: 20px;
+	}
+
+	.address-lines input,
+	.postcode input{
+		width: 100%; 
+		border: 1px solid $light_grey;
+		height: 40px;
+		padding: 5px 10px;
+	}
+
+	.cost{
+		position: absolute;
+		color: $pink; 
+		font-weight: 900;
+		font-size: 22px; 
+		bottom: 50px;
+		font-size: 70px;
+		width: 100%;
+		text-align: center;
+	}
+	.price input{
+		position: absolute;
+		bottom: 0;
+		width: 100%; 
+		padding: 10px; 
+		font-weight: 900; 
+		text-transform: uppercase; 
+		background-color: $pink; 
+		color: #fff;
+		border: 0;
+	}
+}
+
+.pink-text-area{
+	@include two-cols;
+
+	padding: 40px 0px;
+	background-color: $pink; 
+	color: #fff; 
+
+	ul li{
+		margin: 0 0 20px; 
+	}
+
+}

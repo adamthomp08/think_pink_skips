@@ -99,6 +99,16 @@ a:hover {
     max-width: 366px;
     height: auto; }
 
+.home-intro {
+  padding: 40px 0px; }
+  .home-intro .col {
+    float: left;
+    width: 100%;
+    max-width: 490px;
+    margin-right: 20px; }
+  .home-intro .last.col {
+    margin-right: 0px; }
+
 .white-text-area {
   padding: 40px 0px; }
   .white-text-area .col {
@@ -320,15 +330,115 @@ a:hover {
     background-color: #f169a4;
     border: 1px solid #f169a4; }
 
-.home-intro {
-  padding: 40px 0px; }
-  .home-intro .col {
+.skips-selection {
+  padding: 40px 0;
+  background-color: #f2f2f2; }
+  .skips-selection .col {
+    float: left;
+    width: 100%;
+    max-width: 235px;
+    margin-right: 20px; }
+  .skips-selection .last.col {
+    margin-right: 0px; }
+  .skips-selection h2 {
+    color: #e62382;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px; }
+  .skips-selection h2 span {
+    color: #4d4d4d; }
+  .skips-selection .skip-title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase; }
+  .skips-selection .skip-size {
+    display: inline-block;
+    width: 100%;
+    font-weight: 200;
+    margin-bottom: 40px; }
+  .skips-selection .skip-btn {
+    padding: 10px;
+    color: #e62382; }
+  .skips-selection .skip-btn:hover {
+    cursor: pointer;
+    background-color: #e62382;
+    color: #fff; }
+  .skips-selection .active.skip-btn {
+    background-color: #e62382;
+    color: #fff; }
+  .skips-selection .last img {
+    margin-top: -10px; }
+
+.contact-details {
+  padding: 40px 0px;
+  background-color: #f2f2f2;
+  margin-bottom: 30px; }
+  .contact-details .col {
     float: left;
     width: 100%;
     max-width: 490px;
     margin-right: 20px; }
-  .home-intro .last.col {
+  .contact-details .last.col {
     margin-right: 0px; }
+  .contact-details .icon-details .sub-col {
+    display: block;
+    float: left;
+    width: 15%; }
+  .contact-details .icon-details .last.sub-col {
+    width: 85%; }
+  .contact-details .icon-details i {
+    font-size: 30px;
+    color: #e62382; }
+  .contact-details h5 {
+    color: #e62382;
+    font-weight: 900;
+    font-size: 28px;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+    text-align: center; }
+  .contact-details h5:after {
+    display: block;
+    content: ' ';
+    background-color: #f4c100;
+    width: 70px;
+    height: 2px;
+    margin: 20px auto 0; }
+  .contact-details p {
+    font-size: 0.9em;
+    color: #4d4d4d; }
+  .contact-details p span {
+    display: block;
+    font-weight: 900; }
+  .contact-details a {
+    text-decoration: none;
+    color: #4d4d4d; }
+  .contact-details .form-field input[type=text] {
+    height: 40px;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px; }
+  .contact-details .form-field input[type=submit] {
+    width: 122px;
+    margin-left: auto;
+    display: block;
+    background-color: #e62382;
+    border: 0;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .contact-details .form-field textarea {
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    padding: 10px; }
+  .contact-details .form-field input[type=text],
+  .contact-details .form-field textarea {
+    color: #4d4d4d;
+    margin-bottom: 20px; }
 
 .icon-blocks-3 {
   position: relative;
@@ -417,116 +527,6 @@ a:hover {
     font-weight: 600;
     margin: 0;
     line-height: 1.4; }
-
-.contact-details {
-  padding: 40px 0px;
-  background-color: #f2f2f2;
-  margin-bottom: 30px; }
-  .contact-details .col {
-    float: left;
-    width: 100%;
-    max-width: 490px;
-    margin-right: 20px; }
-  .contact-details .last.col {
-    margin-right: 0px; }
-  .contact-details .icon-details .sub-col {
-    display: block;
-    float: left;
-    width: 15%; }
-  .contact-details .icon-details .last.sub-col {
-    width: 85%; }
-  .contact-details .icon-details i {
-    font-size: 30px;
-    color: #e62382; }
-  .contact-details h5 {
-    color: #e62382;
-    font-weight: 900;
-    font-size: 28px;
-    margin: 0 0 40px;
-    text-transform: uppercase;
-    text-align: center; }
-  .contact-details h5:after {
-    display: block;
-    content: ' ';
-    background-color: #f4c100;
-    width: 70px;
-    height: 2px;
-    margin: 20px auto 0; }
-  .contact-details p {
-    font-size: 0.9em;
-    color: #4d4d4d; }
-  .contact-details p span {
-    display: block;
-    font-weight: 900; }
-  .contact-details a {
-    text-decoration: none;
-    color: #4d4d4d; }
-  .contact-details .form-field input[type=text] {
-    height: 40px;
-    width: 100%;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 10px; }
-  .contact-details .form-field input[type=submit] {
-    width: 122px;
-    margin-left: auto;
-    display: block;
-    background-color: #e62382;
-    border: 0;
-    padding: 10px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600; }
-  .contact-details .form-field textarea {
-    width: 100%;
-    border: none;
-    background-color: #fff;
-    padding: 10px; }
-  .contact-details .form-field input[type=text],
-  .contact-details .form-field textarea {
-    color: #4d4d4d;
-    margin-bottom: 20px; }
-
-.skips-selection {
-  padding: 40px 0;
-  background-color: #f2f2f2; }
-  .skips-selection .col {
-    float: left;
-    width: 100%;
-    max-width: 235px;
-    margin-right: 20px; }
-  .skips-selection .last.col {
-    margin-right: 0px; }
-  .skips-selection h2 {
-    color: #e62382;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 22px; }
-  .skips-selection h2 span {
-    color: #4d4d4d; }
-  .skips-selection .skip-title {
-    display: inline-block;
-    width: 100%;
-    font-weight: 900;
-    text-transform: uppercase; }
-  .skips-selection .skip-size {
-    display: inline-block;
-    width: 100%;
-    font-weight: 200;
-    margin-bottom: 40px; }
-  .skips-selection .skip-btn {
-    padding: 10px;
-    color: #e62382; }
-  .skips-selection .skip-btn:hover {
-    cursor: pointer;
-    background-color: #e62382;
-    color: #fff; }
-  .skips-selection .active.skip-btn {
-    background-color: #e62382;
-    color: #fff; }
-  .skips-selection .last img {
-    margin-top: -10px; }
 
 .footer {
   background-color: #333333;
