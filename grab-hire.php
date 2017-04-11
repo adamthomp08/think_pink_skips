@@ -27,7 +27,7 @@ ground works.</strong></p>
  <section class="pink-text-area">
         <div class="container">
                 <div class="col">
-                        <img src="/img/large_skip.jpg" alt="Gravel" />
+                        <img src="/img/gravel_pile.jpg" alt="Gravel" />
                 </div>
                 <div class="col last">
                         <p><strong>Some examples of where a grab service may be favourable, either economically or operational grab wagon:</strong></p>

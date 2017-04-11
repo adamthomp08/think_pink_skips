@@ -1,6 +1,7 @@
 .main-nav{
 
 	padding: 10px 0px; 
+	position: relative;
 
 	.logo{
 		float: left; 
@@ -11,8 +12,7 @@
 		max-width: 290px; 
 	}
 	nav{
-		float: left; 
-		width: 690px;
+		float: right; 
 		margin-left: 20px; 
 		padding: 10px 0;
 	}
@@ -21,10 +21,13 @@
 		padding: 0; 
 		list-style: none;
 		text-align: right;
+		@media (max-width: 850px){
+			display: none;	
+		}
 	}
 	nav ul li{
 		display: inline-block;
-    	padding: 12px 15px;
+    	padding: 12px 15px;    	
 	}
 	nav ul li a{
 		text-decoration: none;
@@ -59,3 +62,5 @@
     	padding-right: 0;
 	}
 }
+
+

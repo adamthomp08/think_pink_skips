@@ -1,7 +1,7 @@
 <?php include_once('header.php'); ?>
 
 <section class="landing-banner">
-        <img src="/img/grab_hire_banner.jpg" alt="Grab Hire Banner" />
+        <img src="/img/sweeper_hire_banner.jpg" alt="Grab Hire Banner" />
 </section>
 
  <section class="white-text-area">
@@ -18,7 +18,7 @@
  <section class="pink-text-area">
         <div class="container">
                 <div class="col">
-                        <img src="/img/large_skip.jpg" alt="Gravel" />
+                        <img src="/img/sweeper_truck.jpg" alt="Gravel" />
                 </div>
                 <div class="col last">
                         <p><strong>Each sweeper is fitted to a high specification</strong></p>

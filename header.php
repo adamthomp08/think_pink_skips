@@ -25,7 +25,9 @@
         <header class="main-nav"> 
                 <div class="container">
                         <div class="logo">
-                            <img src="/img/think_pink_logo.svg" alt="Think Pink Skips Logo">
+                            <a href="/">
+                                <img src="/img/think_pink_logo.svg" alt="Think Pink Skips Logo">
+                            </a>
                         </div>
                         <nav>
                             <ul>
