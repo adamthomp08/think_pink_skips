@@ -1,7 +1,7 @@
 
 $(function() {
 
-    $(".date-picker").datepicker({ firstDay: 1 });
+    // $(".date-picker").datepicker({ firstDay: 1 });
     
 	$( ".skip-btn" ).hover(
 	  function() {
@@ -11,13 +11,9 @@ $(function() {
 	    
 	   		var replace = link_text.replace("pink", "white");
 
-		    // alert(replace);
-
 		    $( this ).children( "img" ).attr("src", replace);
 	  	}
 	  
-
-
 	  }, function() {
 
 	  	if( ! $( this ).hasClass("active") ){
@@ -43,6 +39,13 @@ $(function() {
 		  	$( ".active.skip-btn").removeClass("active");
 
 		  	$( this ).addClass("active");
+
+		  	//update hidden field
+
+		  	$('#skip-size').val($(this).data('skip-size'));
+
+		  	// alert($('#skip-size').val());
+
 	  	}
 
 	});
@@ -54,10 +57,22 @@ $(function() {
 
 		  	$( this ).addClass("active");
 
+			$('#private').val($(this).data('private'));
+
+		  	// alert($('#private').val());		  	
 
 	  	}
 
 	});	
+
+	$('.date-picker').datepicker({
+	    onSelect: function(dateText, inst) {
+	      $("#date").val(dateText);
+	    },
+	    firstDay: 1,
+	    dateFormat: 'dd-mm-yy'
+	});
+
 
 	$( ".delivery" ).click(function() {
 		if( ! $( this ).hasClass("active") ){
@@ -66,7 +81,9 @@ $(function() {
 
 		  	$( this ).addClass("active");
 
+		  	$('#days').val($(this).data('days'));
 
+		  	// alert($('#days').val());		
 	  	}
 
 	});	
@@ -78,6 +95,9 @@ $(function() {
 		$(".home").addClass("active");
 	}
 
-	
+	$( ".burger-icon" ).click(function() {
+		$( "nav ul" ).toggle();
+	} );
+
 
 });

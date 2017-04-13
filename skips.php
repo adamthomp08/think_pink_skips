@@ -24,38 +24,40 @@
         </div>
 </section>
 
+<form action="/quote.php" method="post">
  <section class="skips-selection">
         <div class="container">
                 <h2>Step 1: <span>Size</span></h2>
                 <div class="col">
-                        <div class="skip-btn active">
+                        <div class="skip-btn active" data-skip-size="mini" >
                                <span class="skip-title">Mini Skip</span>
                                <span class="skip-size">(2 Cubic Yards)</span> 
                                <img src="/img/mini_skip_white.svg" alt="Mini Skip" />
                         </div>
                 </div>
                 <div class="col">
-                        <div class="skip-btn">
+                        <div class="skip-btn" data-skip-size="midi">
                                 <span class="skip-title">Midi Skip</span>
                                 <span class="skip-size">(4 Cubic Yards)</span> 
                                 <img src="/img/midi_skip_pink.svg" alt="Midi Skip" />
                         </div>
                 </div>
                 <div class="col">
-                        <div class="skip-btn">
+                        <div class="skip-btn" data-skip-size="builders">
                                 <span class="skip-title">Builders Skip</span>
                                 <span class="skip-size" style="    margin-bottom: 50px;">(8 Cubic Yards)</span> 
                                  <img src="/img/builders_skip_pink.svg" alt="Builders Skip" />
                         </div>
                 </div>
                 <div class="col last">
-                        <div class="skip-btn">
+                        <div class="skip-btn" data-skip-size="large">
                                 <span class="skip-title">Large Skip</span>
                                 <span class="skip-size">(16 Cubic Yards)</span> 
                                 <img src="/img/large_skip_pink.svg" alt="Large Skip" />
                         </div>
                 </div>
         </div>
+        <input id="skip-size" type="hidden" value="mini" />
 </section>
 
  <section class="white-text-area">
@@ -63,14 +65,15 @@
                 <div class="col last">
                         <h2>Step 2: <span>Configure</span></h2>
                         <div class="btn-container clearfix">
-                                <div class="private-land configure">Private Land</div>
-                                <div class="private-road configure active">Private Road*</div>
+                                <div class="private-land configure"  data-private="land">Private Land</div>
+                                <div class="private-road configure active" data-private="road">Private Road*</div>
                         </div>
                         <p>*If your Skip is to be placed on the road, then we will need to apply for a permit. The charge for a permit is £33.00 + vat and
 this will be added to your quote Craven District,council impose additional costs . Please call the office on <a href="tel:01524844151">01524 844 151</a>
 for a quote for this area if you require your skip to be placed on the road.</p>
                 </div>
         </div>
+        <input id="private" type="hidden" value="road" />
 </section>
 
 <section class="pink-text-area-form">
@@ -79,10 +82,12 @@ for a quote for this area if you require your skip to be placed on the road.</p>
                         <h2>Step 3: <span>Delivery Date</span></h2>
                         <div class="date-picker-container">
                                 <div class="date-picker"></div>
+                                <input id="date" type="hidden" value="" />
                         </div>
                         <div class="hire-days">
-                                <div class="three-day delivery active">3 Days</div>
-                                <div class="twenty-one-day delivery">21 Days</div>
+                                <div class="three-day delivery active" data-days="3">3 Days</div>
+                                <div class="twenty-one-day delivery" data-days="21">21 Days</div>
+                                  <input id="days" type="hidden" value="" />
                         </div>
                 </div>
         </div>
@@ -110,5 +115,6 @@ for a quote for this area if you require your skip to be placed on the road.</p>
                 </div>
         </div>
 </section>
+</form>
 
 <?php include_once('footer.php'); ?>

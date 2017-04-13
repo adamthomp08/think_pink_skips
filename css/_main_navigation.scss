@@ -3,6 +3,10 @@
 	padding: 10px 0px; 
 	position: relative;
 
+	@media (max-width: 840px){
+	 	border-bottom: 1px solid #ededed;
+	}
+
 	.logo{
 		float: left; 
 		width: 290px;
@@ -21,13 +25,29 @@
 		padding: 0; 
 		list-style: none;
 		text-align: right;
-		@media (max-width: 850px){
-			display: none;	
+		@media (max-width: 840px){
+			display: none;
+		  	position: absolute;
+		    left: 0;
+		    top: 79px;
+		    right: 0;
+		    background-color: #fff;
+		    z-index: 2;	
 		}
 	}
 	nav ul li{
 		display: inline-block;
-    	padding: 12px 15px;    	
+    	padding: 12px 15px;  
+    	@media (max-width: 900px){
+    		padding: 12px 8px;  
+    	}  	
+		@media (max-width: 840px){
+			width: 100%;
+	    	text-align: left;
+	    	padding: 10px 30px;
+	    	border-bottom: 1px solid #ededed;
+		}
+
 	}
 	nav ul li a{
 		text-decoration: none;
@@ -52,7 +72,11 @@
       	transition: width .3s ease, background-color .3s ease;
       	-webkit-transition: width .3s ease, background-color .3s ease;
       	-moz-transition: width .3s ease, background-color .3s ease;
-      	-o-transition: width .3s ease, background-color .3s ease; 
+      	-o-transition: width .3s ease, background-color .3s ease;
+
+		@media (max-width: 840px){
+      		content: none; 
+      	}
 	}
 	a.active:after{
 		width: 100% !important; 
@@ -60,6 +84,20 @@
 	}
 	nav ul li:last-child {
     	padding-right: 0;
+	}
+	.burger-icon{
+		display: none;
+		position: absolute;
+		width: 40px; 
+		height: 40px; 
+		background: $pink; 
+		right: 20px;
+		top: 10px;
+		display: none;
+
+		@media (max-width: 840px){
+      		display: block; 
+      	}
 	}
 }
 

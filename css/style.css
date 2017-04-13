@@ -6,6 +6,7 @@ body {
 
 .container {
   display: block;
+  position: relative;
   max-width: 1040px;
   margin: 0 auto;
   padding: 0px 20px; }
@@ -40,6 +41,9 @@ a:hover {
 .main-nav {
   padding: 10px 0px;
   position: relative; }
+  @media (max-width: 840px) {
+    .main-nav {
+      border-bottom: 1px solid #ededed; } }
   .main-nav .logo {
     float: left;
     width: 290px; }
@@ -54,12 +58,27 @@ a:hover {
     padding: 0;
     list-style: none;
     text-align: right; }
-    @media (max-width: 850px) {
+    @media (max-width: 840px) {
       .main-nav nav ul {
-        display: none; } }
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 79px;
+        right: 0;
+        background-color: #fff;
+        z-index: 2; } }
   .main-nav nav ul li {
     display: inline-block;
     padding: 12px 15px; }
+    @media (max-width: 900px) {
+      .main-nav nav ul li {
+        padding: 12px 8px; } }
+    @media (max-width: 840px) {
+      .main-nav nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 30px;
+        border-bottom: 1px solid #ededed; } }
   .main-nav nav ul li a {
     text-decoration: none;
     font-size: 0.85em;
@@ -82,11 +101,26 @@ a:hover {
     -webkit-transition: width .3s ease, background-color .3s ease;
     -moz-transition: width .3s ease, background-color .3s ease;
     -o-transition: width .3s ease, background-color .3s ease; }
+    @media (max-width: 840px) {
+      .main-nav nav ul li a:after {
+        content: none; } }
   .main-nav a.active:after {
     width: 100% !important;
     background-color: #f4c100 !important; }
   .main-nav nav ul li:last-child {
     padding-right: 0; }
+  .main-nav .burger-icon {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #e62382;
+    right: 20px;
+    top: 10px;
+    display: none; }
+    @media (max-width: 840px) {
+      .main-nav .burger-icon {
+        display: block; } }
 
 .homepage-banner {
   position: relative; }

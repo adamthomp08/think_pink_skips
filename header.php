@@ -30,6 +30,7 @@
                             </a>
                         </div>
                         <nav>
+                            <div class="burger-icon"></div>
                             <ul>
                                 <li><a href="/" class="home">Home</a></li>
                                 <li><a href="/about-us.php">About Us</a></li>
