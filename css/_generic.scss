@@ -61,10 +61,27 @@ a:hover{
 		width: 100%;
 		max-width: 490px;
 		margin-right: 20px;
+		@media (max-width: 1040px){
+			width: 49%; 
+			max-width: 100%; 
+			margin-right: 2%;
+		}
+		@media (max-width: 767px){
+			width: 100%; 
+			margin-right: 0%;
+			margin-bottom: 20px; 
+		}
 	}
 	.last.col{
-		margin-right: 0px;
+		margin: 0px;
 	}
+
+	.col img{
+		@media (max-width: 767px){
+			width: 100%; 
+		}
+	}
+
 }
 
 
@@ -74,9 +91,24 @@ a:hover{
 		width: 100%;
 		max-width: 320px;
 		margin-right: 20px;
+		@media (max-width: 1040px){
+			width: 32%;
+			max-width: 100%; 
+			margin-right: 2%; 
+		}
+		@media (max-width: 767px){
+			width: 100%;
+			max-width: 100%; 
+			margin-right: 0%; 
+			margin-bottom: 10px; 	
+		}
 	}
 	.last.col{
 		margin-right: 0px;
+		@media (max-width: 767px){
+			margin-right: 0%; 
+			margin-bottom: 0; 	
+		}
 	}
 }
 
@@ -86,8 +118,23 @@ a:hover{
 		width: 100%;
 		max-width: 235px;
 		margin-right: 20px;
+		@media (max-width: 1040px){
+			width: 23%;
+			max-width: 100%;
+			margin-right: 2.5%; 
+		}
+		@media (max-width: 767px){
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 20px;
+			margin-right: 0%; 
+		}
 	}
 	.last.col{
 		margin-right: 0px;
+		@media (max-width: 767px){
+			margin-bottom: 0px;
+		}
 	}
+	
 }

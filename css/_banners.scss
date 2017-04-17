@@ -1,7 +1,11 @@
 
 .homepage-banner{
 	
-	position: relative; 
+	position: relative;
+
+	@media (max-width: 767px){ 
+		display: none;
+	}
 
 	.container {
 	    position: absolute;
@@ -14,12 +18,18 @@
 	.into-msg {
 	    position: absolute;
 	    left: 0;
-	    top: 54px;
+	    top: 14%;
+		width: 36%;
+    	height: auto;
+    	@media (max-width: 1100px){
+    		top: 10%;
+			width: 30%;
+			left: 20px;
+    	}
 	}
 
-	.into-msg {
-		max-width: 366px; 
-		height: auto; 
+	img{
+		width: 100%;
 	}
 
 }

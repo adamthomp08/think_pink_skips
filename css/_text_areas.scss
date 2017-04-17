@@ -2,6 +2,10 @@
 	@include two-cols;
 
 	padding: 40px 0px; 
+
+	@media(max-width: 767px){
+		padding: 20px 0px; 
+	}
 }
 
 .white-text-area{
