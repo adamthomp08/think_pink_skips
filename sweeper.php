@@ -43,8 +43,8 @@
 
  <section class="white-text-area">
         <div class="container">
-                <div class="col last">
-                <p style="margin-bottom: 0px;"><strong>Lorem ipsum dolor sit amet, vim verear percipit platonem ei, elit quidam ad vix. Id quis noluisse consulatu eam, ad eam volutpat partiendo sadipscing, no eum saepe placerat laboramus. Ad mel quidam commune senserit, causae dissentiunt ei sit. Eum justo consulatu at, eros torquatos usu ea. Laoreet placerat definiebas has ex, graece facilisi invenire est eu. Sed at novum impetus probatus.</strong></p>
+                <div class="col last paragraph-no-margin">
+                <p><strong>Lorem ipsum dolor sit amet, vim verear percipit platonem ei, elit quidam ad vix. Id quis noluisse consulatu eam, ad eam volutpat partiendo sadipscing, no eum saepe placerat laboramus. Ad mel quidam commune senserit, causae dissentiunt ei sit. Eum justo consulatu at, eros torquatos usu ea. Laoreet placerat definiebas has ex, graece facilisi invenire est eu. Sed at novum impetus probatus.</strong></p>
                 </div>
         </div>
 </section>

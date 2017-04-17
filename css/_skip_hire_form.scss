@@ -6,11 +6,18 @@
 	background-color: $pink; 
 	color: #fff; 
 
+	@media (max-width: 767px){
+		padding: 20px 0px;
+	}
+
 	.date-picker-container{
 		float: left; 
 		width: 70%;
 		margin-right: 2%;
-		background: red;
+		@media (max-width: 767px){
+			width: 100%;
+			margin: 0 0 20px;
+		}
 	}
 	.hire-days{
 		position: absolute;
@@ -20,6 +27,12 @@
 		left: 0; 
 		right: 0; 
 		bottom: 0; 
+		@media (max-width: 767px){
+			float: left; 
+			position: relative;
+			width: 100%;
+			margin: 0; 
+		}
 	}
 	h2{
 		color: $yellow; 
@@ -46,6 +59,9 @@
 		padding: 15px;
 		bottom: 0;
 		cursor: pointer;
+		@media (max-width: 767px){
+			position: relative;
+		}
 	}
 
 	.active.three-day,
@@ -56,6 +72,10 @@
 
 	.three-day{
 		bottom: 70px;
+		@media (max-width: 767px){
+			bottom: initial;
+			margin-bottom: 20px;
+		}
 	}
 
 	.ui-datepicker{
@@ -149,6 +169,10 @@
 
 	padding: 40px 0; 
 	background-color: $light_grey; 
+
+	@media (max-width: 767px){
+		padding: 20px 0px;
+	}
 
 	h2{
 		color: $pink; 

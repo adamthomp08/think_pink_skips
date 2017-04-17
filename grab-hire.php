@@ -47,8 +47,8 @@ to load</li>
 
  <section class="white-text-area">
         <div class="container">
-                <div class="col last">
-                <p style="margin-bottom: 0px;"><strong>Think Pink grab your waste from any location they can reach with their on-board cranes. An ideal alternative to a
+                <div class="col last paragraph-no-margin">
+                <p><strong>Think Pink grab your waste from any location they can reach with their on-board cranes. An ideal alternative to a
 skip, just pile it in a heap and we will come along and load it on to our vehicle without you lifting a finger! We are
 also able to supply aggregates at extremely competitive rates.</strong></p>
                 </div>
