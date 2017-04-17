@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en-GB">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -30,7 +30,7 @@
                             </a>
                         </div>
                         <nav>
-                            <div class="burger-icon"></div>
+                            <div class="burger-icon"><i class="icon-align-justify"></i></div>
                             <ul>
                                 <li><a href="/" class="home">Home</a></li>
                                 <li><a href="/about-us.php">About Us</a></li>

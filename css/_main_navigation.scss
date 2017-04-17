@@ -10,15 +10,22 @@
 	.logo{
 		float: left; 
 		width: 290px;
+		margin-left: -12px;
 	}
 
 	.logo img{
 		max-width: 290px; 
+		@media (max-width: 767px){
+		    max-width: 210px;
+		}
 	}
 	nav{
 		float: right; 
 		margin-left: 20px; 
 		padding: 10px 0;
+		@media (max-width: 767px){
+			margin: 0;
+		}
 	}
 	nav ul{
 		margin: 0;
@@ -34,6 +41,10 @@
 		    background-color: #fff;
 		    z-index: 2;	
 		}
+		@media (max-width: 767px){
+		    top: 59px;
+		    border-top: 1px solid #ededed;
+		}
 	}
 	nav ul li{
 		display: inline-block;
@@ -44,7 +55,7 @@
 		@media (max-width: 840px){
 			width: 100%;
 	    	text-align: left;
-	    	padding: 10px 30px;
+	    	padding: 10px 20px;
 	    	border-bottom: 1px solid #ededed;
 		}
 
@@ -89,8 +100,7 @@
 		display: none;
 		position: absolute;
 		width: 40px; 
-		height: 40px; 
-		background: $pink; 
+		height: 40px;  
 		right: 20px;
 		top: 10px;
 		display: none;
@@ -98,6 +108,13 @@
 		@media (max-width: 840px){
       		display: block; 
       	}
+      	@media (max-width: 767px){
+      		top: 0px; 
+      	}
+	}
+	i{
+		font-size: 40px; 
+		color: #000; 
 	}
 }
 

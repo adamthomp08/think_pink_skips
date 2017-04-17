@@ -46,13 +46,20 @@ a:hover {
       border-bottom: 1px solid #ededed; } }
   .main-nav .logo {
     float: left;
-    width: 290px; }
+    width: 290px;
+    margin-left: -12px; }
   .main-nav .logo img {
     max-width: 290px; }
+    @media (max-width: 767px) {
+      .main-nav .logo img {
+        max-width: 210px; } }
   .main-nav nav {
     float: right;
     margin-left: 20px;
     padding: 10px 0; }
+    @media (max-width: 767px) {
+      .main-nav nav {
+        margin: 0; } }
   .main-nav nav ul {
     margin: 0;
     padding: 0;
@@ -67,6 +74,10 @@ a:hover {
         right: 0;
         background-color: #fff;
         z-index: 2; } }
+    @media (max-width: 767px) {
+      .main-nav nav ul {
+        top: 59px;
+        border-top: 1px solid #ededed; } }
   .main-nav nav ul li {
     display: inline-block;
     padding: 12px 15px; }
@@ -77,7 +88,7 @@ a:hover {
       .main-nav nav ul li {
         width: 100%;
         text-align: left;
-        padding: 10px 30px;
+        padding: 10px 20px;
         border-bottom: 1px solid #ededed; } }
   .main-nav nav ul li a {
     text-decoration: none;
@@ -114,13 +125,18 @@ a:hover {
     position: absolute;
     width: 40px;
     height: 40px;
-    background: #e62382;
     right: 20px;
     top: 10px;
     display: none; }
     @media (max-width: 840px) {
       .main-nav .burger-icon {
         display: block; } }
+    @media (max-width: 767px) {
+      .main-nav .burger-icon {
+        top: 0px; } }
+  .main-nav i {
+    font-size: 40px;
+    color: #000; }
 
 .homepage-banner {
   position: relative; }
